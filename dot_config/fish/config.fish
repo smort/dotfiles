@@ -6,4 +6,7 @@ end
 # Set up fzf key bindings
 fzf --fish | source
 
+# fnm initialization
+source ~/.config/fish/conf.d/fnm.fish
+
 starship init fish | source

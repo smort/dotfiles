@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Exit immediately if a command exits with a non-zero status
+set -e
+
+echo "Updating apt package list..."
+sudo apt update
+
+# Install apt packages listed in .chezmoidata
+{{- if .packages.ubuntu.apt }}
+  echo "Installing apt packages..."
+  # Use -y to automatically answer yes to prompts
+  sudo apt install -y \
+  {{- range .packages.ubuntu.apt }}
+  {{ . | quote }} \
+  {{- end }}
+{{- end }}
+
