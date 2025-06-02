@@ -10,3 +10,6 @@ fzf --fish | source
 source ~/.config/fish/conf.d/fnm.fish
 
 starship init fish | source
+
+fish_add_path /home/linuxbrew/.linuxbrew/bin
+

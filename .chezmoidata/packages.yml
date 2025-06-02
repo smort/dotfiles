@@ -1,6 +1,0 @@
-packages:
-  ubuntu:
-    apt:
-      - git
-      - curl
-      - unzip
