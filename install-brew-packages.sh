@@ -3,6 +3,8 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
+export PATH=/home/linuxbrew/.linuxbrew:$PATH
+
 PACKAGE_FILE="brew-packages.conf"
 
 if [ ! -f "$PACKAGE_FILE" ]; then

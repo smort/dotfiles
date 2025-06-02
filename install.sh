@@ -7,3 +7,6 @@ set -e
 ./install-apt-packages.sh
 ./install-brew.sh
 ./install-brew-packages.sh
+
+stow fish/
+stow starship/
