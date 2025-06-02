@@ -3,7 +3,7 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-export PATH=/home/linuxbrew/.linuxbrew:$PATH
+export PATH=/home/linuxbrew/.linuxbrew/bin:$PATH
 
 PACKAGE_FILE="brew-packages.conf"
 
