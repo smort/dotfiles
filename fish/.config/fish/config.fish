@@ -4,6 +4,7 @@ if test -d ~/.local/bin
 end
 
 fish_add_path /home/linuxbrew/.linuxbrew/bin
+fish_add_path /home/smort/go/bin
 
 # Set up fzf key bindings
 fzf --fish | source
