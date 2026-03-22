@@ -1,0 +1,8 @@
+{
+  "network": {
+    "allowedDomains": [
+      "satisfactory.wiki.gg"
+    ],
+    "deniedDomains": []
+  }
+}
