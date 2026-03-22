@@ -29,7 +29,7 @@ if test -f ~/.env
 
         if string match -qr '^".*"$' -- $value
             set value (string sub -s 2 -e -1 -- $value)
-        else if string match -qr "^'.*'$" -- $value
+        else if string match -qr "^'.*'\$" -- $value
             set value (string sub -s 2 -e -1 -- $value)
         end
 
@@ -46,3 +46,10 @@ fzf --fish | source
 source ~/.config/fish/conf.d/fnm.fish
 
 starship init fish | source
+
+# pnpm
+set -gx PNPM_HOME "/home/smort/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end
