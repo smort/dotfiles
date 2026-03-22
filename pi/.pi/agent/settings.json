@@ -1,12 +1,12 @@
 {
-  "lastChangelogVersion": "0.57.1",
-  "defaultProvider": "github-copilot",
-  "defaultModel": "claude-sonnet-4",
-  "packages": [
-    "npm:@aliou/pi-guardrails",
-    "npm:@tmustier/pi-usage-extension",
-    "npm:pi-subagents",
-    "npm:pi-sandbox"
-  ],
-  "defaultThinkingLevel": "medium"
+    "lastChangelogVersion": "0.57.1",
+    "defaultProvider": "openai-codex",
+    "defaultModel": "gpt-5.3-codex",
+    "packages": [
+        "npm:@aliou/pi-guardrails",
+        "npm:@tmustier/pi-usage-extension",
+        "npm:pi-subagents",
+        "npm:pi-sandbox"
+    ],
+    "defaultThinkingLevel": "medium"
 }
